@@ -1,17 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace FluToDo
 {
     public partial class MainPage : ContentPage
     {
+        MainPageViewModel _vm;
         public MainPage()
         {
+            _vm = new MainPageViewModel();
+            BindingContext = _vm;
             InitializeComponent();
         }
+
     }
 }
