@@ -11,6 +11,5 @@ namespace FluToDo
             BindingContext = _vm;
             InitializeComponent();
         }
-
     }
 }
